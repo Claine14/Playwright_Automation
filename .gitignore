@@ -1,0 +1,45 @@
+node_modules/
+dist/
+reports/
+env/.env
+.DS_Store
+
+# Playwright & env
+test-results/
+playwright-report/
+blob-report/
+.env
+.env.*
+!.env.example
+
+# Playwright & env
+test-results/
+playwright-report/
+blob-report/
+.env
+.env.*
+!.env.example
+
+# Playwright & env
+test-results/
+playwright-report/
+blob-report/
+.env
+.env.*
+!.env.example
+
+# Playwright & env
+test-results/
+playwright-report/
+blob-report/
+.env
+.env.*
+!.env.example
+
+# Playwright & env
+test-results/
+playwright-report/
+blob-report/
+.env
+.env.*
+!.env.example

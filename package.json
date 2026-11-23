@@ -1,0 +1,22 @@
+{
+  "name": "sauce-demo-ui-automation",
+  "version": "1.0.0",
+  "author": "claine",
+  "description": "Playwright + Cucumber BDD UI Automation Framework for Sauce Demo Shopify Storefront",
+  "scripts": {
+    "test:ui": "npx cucumber-js",
+    "test:ui:smoke": "npx cucumber-js --tags @smoke",
+    "test:ui:cart": "npx cucumber-js --tags @cart",
+    "test:ui:parallel": "npx cucumber-js --parallel 2",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.10.0",
+    "dotenv": "^16.4.7",
+    "prettier": "^3.4.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
