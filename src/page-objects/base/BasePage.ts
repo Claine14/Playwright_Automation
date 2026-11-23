@@ -27,7 +27,7 @@ export class BasePage {
     this.topAboutUsLink = page.locator('header nav a[href="/pages/about-us"]:visible').first();
     this.topLogInLink = page.locator('header nav a[href="/account/login"]:visible').first();
     this.topSignUpLink = page.locator('header nav a[href="/account/register"]:visible').first();
-    this.headerCartLink = page.locator('header a[href="/cart"]:visible').first();
+    this.headerCartLink = page.locator('header a.cart-target').first();
     this.headerCheckOutLink = page.locator('header a[href="/cart"]:visible', { hasText: 'Check Out' }).first();
     this.storeLogoLink = page.locator('header h1 a[href="/"]');
     this.storeTagline = page.locator('header h3');

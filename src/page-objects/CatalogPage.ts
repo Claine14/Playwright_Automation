@@ -17,9 +17,7 @@ export class CatalogPage extends ListingBasePage {
 
   async verifySoldOutBadge(productName: string, badgeText: string): Promise<void> {
     const cardLink = this.getProductCardByTitle(productName);
-    await expect(cardLink).toBeVisible();
-    // On Sauce Demo's Shopify theme, the "Sold Out" badge is a sibling element inside the parent grid wrapper
-    const productWrapper = cardLink.locator('..');
-    await expect(productWrapper).toContainText(badgeText);
+    // Badge "Sold Out" adalah div.sold-out di dalam link kartu produk
+    await expect(cardLink.locator('.sold-out')).toHaveText(badgeText);
   }
 }

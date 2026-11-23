@@ -14,8 +14,8 @@ Feature: Sauce Demo Catalog Page
     And the product "Noir jacket" should be listed with price "£60.00"
     And the product "Striped top" should be listed with price "£50.00"
     And the product "White sandals" should be listed with price "£25.00"
-    And the product "Bronze sandals" should display a "Sold Out" badge
-    And the product "Striped top" should display a "Sold Out" badge
+    And the product "Brown Shades" should display a "Sold Out" badge
+    And the product "White sandals" should display a "Sold Out" badge 
 
   Scenario: Open an in-stock product from the catalog
     When I open the product "Black heels" from the catalog

@@ -8,5 +8,5 @@ Feature: Sauce Demo Product Detail Page
     Then the header cart count should be "(1)"
 
   Scenario: Verify sold-out product cannot be added to cart
-    Given I am on the product detail page for "bronze-sandals"
+    Given I am on the product detail page for "brown-shades"
     Then the Add to Cart button should be unavailable or marked sold out

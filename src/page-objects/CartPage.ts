@@ -13,7 +13,7 @@ export class CartPage extends BasePage {
     super(page);
     this.emptyCartText = page.locator('section p', { hasText: 'It appears that your cart is currently empty!' });
     this.continueShoppingLink = page.locator('section a[href="/collections/all"]', { hasText: 'Continue Shopping' });
-    this.cartForm = page.locator('form[action="/cart"]');
+    this.cartForm = page.locator('form[action="/cart"]:visible');
     this.updateCartButton = page.locator('form[action="/cart"] input[name="update"], form[action="/cart"] button[name="update"]').first();
     this.checkOutButton = page.locator('form[action="/cart"] input[name="checkout"], form[action="/cart"] button[name="checkout"]').first();
   }
